@@ -53,6 +53,8 @@ Un multiplexor requiere un demultiplexor para completar el proceso, es decir, pa
 
 ![variables.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/variables.JPG)
 
+**Figura :** Variables de entrada y de Salida del circuito ALU
+
 
 ### 6. LISTA DE COMPONENTES
 
