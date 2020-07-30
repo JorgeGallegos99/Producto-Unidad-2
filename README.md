@@ -45,6 +45,13 @@ Un multiplexor requiere un demultiplexor para completar el proceso, es decir, pa
 
 
 ### 5. DIAGRAMAS
+#### 5.1 Diagrama de Funcionamiento
+
+![bloques_Funcionamiento.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/bloques_Funcionamiento.JPG)
+
+**Figura :** Funcionamiento del Circuito.
+
+![variables.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/variables.JPG)
 
 
 ### 6. LISTA DE COMPONENTES
