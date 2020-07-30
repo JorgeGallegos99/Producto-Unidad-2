@@ -5,7 +5,16 @@
 
 
 ### 2. OBJETIVOS
+**Objetivo General**
 
+● Diseñar una Unidad Aritmética lógica (ALU) con dos números de 8 bits cada uno y multiplexando las salidas, realizar la simulación e implementación correspondiente.
+
+**Objetivos Específicos**
+
+●	Elaborar en una Alu las operaciones de suma, resta, función or, y función And.
+●	Emplear Multiplexores enel integrado 4511 para mostrar en los Displays de 7 segmentos para la visualización de las salidas y el 7483 para la suma.
+●	Simular la ALU con 4 operaciones, con la herramienta de software Proteus.
+* Implementar el circuito de la Alu diseñado en thinkercad.
 
 ### 3. ESTADO DEL ARTE
 
