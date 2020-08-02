@@ -147,6 +147,14 @@ Un multiplexor requiere un demultiplexor para completar el proceso, es decir, pa
 
 ### 7. MAPA DE VARIABLES
 
+ |**Variable** | 	**Tipo**   | **Descripción**|
+ |-------------|----------------|-------------------|
+ |A0,A1,A2,A3,A4,A5,A6,A7|  Entrada|Son los bits de Entrada del numero A donde A7 es el bit mas significativo y A0 es el bit menos significativo|
+ |B0,B1,B2,B3,B4,B5,B6,B7| Entrada|	Son los bits de Entrada del numero B donde B7 es el bit mas significativo y B0 es el bit menos significativo|
+ |M0,M1,M2,M3,M4,M5,M6,M7,M8| Salida|Bits del resultado de la operación suma donde M0  el bit menos significativo y M7 es el bit mas significativo|
+ |N0,N1,N2,N3,N4,N5,N6,N7,N8| Salida| Bits del resultado de la operación resta donde N0  el bit menos significativo y N7 es el bit mas significativo|
+ |G0,G1,G2,G3,G4,G5,G6,G7,G8| Salida|Bits que nos devuelve el mutiplexor dependiendo del selector|
+ |SIG|Salida| Signo de la operación resta|
 
 ### 8. EXPLICACIÓN DEL CÓDIGO FUENTE
 
@@ -200,6 +208,7 @@ El circuito fue implementado en la plataforma Thinkercad como se muestra que ha 
 
 ### 13. CRONOGRAMA
 
+![Cronograma](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Cronograma.png)
 
 ### 14. BIBLIOGRAFÍA
 
