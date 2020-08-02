@@ -228,6 +228,11 @@ Para la implementación del sumador de 8 bits se dio uso al integrado 74283
 
 **Figura 11:** Integrado 74283
 
+La resta se implementa mediante un sumador. El método consiste en llevar al minuendo a una de las entradas y el sustraendo en complemento 2 a la otra entrada.
+
+Un medio restador es un circuito combinacional que sustrae dos bits y produce su diferencia. También tiene la salida para especificar si se ha tomado un 1. Se designa el bit minuendo por x y el bit sustraendo mediante y. Para llevar a cabo x – y, tienen que verificarse las magnitudes relativas de x y y. Si x >= y, se tienen tres posibilidades; 0 - 0 = 0, 1 – 0 = 1 y, 1 - 1 = 0. El resultado se denomina bit de diferencia. Si x < y, tenemos 0 – 1 y es necesario tomar un 1 de la siguiente etapa más alta. El 1 que se toma de la siguiente etapa más alta añade dos al bit minuendo, de la misma forma que en el sistema decimal lo que se toma añade 10 a un dígito minuendo. Con el minuendo igual a 2, la diferencia llega a ser 2 – 1 = 1. El medio restador requiere dos salidas. Una salida genera la diferencia y se denotará por el símbolo D. La segunda salida, denotada B para lo que se toma, genera la señal binaria que informa a la siguiente etapa que se ha tomado un 1. 
+
+![Restador Completo](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Restador%20Completo.gif)
 
 ### 5. DIAGRAMAS
 #### 5.1 Diagrama de Funcionamiento
@@ -328,6 +333,8 @@ http://homepage.cem.itesm.mx/garcia.andres/PDF201411/Aritmetica(Basis).pdf
 http://circuitos-aritmeticos.blogspot.com/
 
 http://serdis.dis.ulpgc.es/~gii-fc/material_clases_teoria/Tema3/Tema3_1_Componentes_combinacionales_FC_GII.pdf
+
+http://electroucn.blogspot.com/2014/06/Restador.html
 
 
 ### 15. ANEXOS
