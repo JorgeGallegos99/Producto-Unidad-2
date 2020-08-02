@@ -11,7 +11,7 @@ Para esta limitante se emplean los circuitos integrados sumadores; un solo integ
 
 Considerando las operaciones de suma y resta se tiene la idea de una calculadora binaria que debe tener una sola salida, para este proceso existen los multiplexores, integrados que agrupan cierto número de variables de entrada y la llevan a una única salida dependiendo de un selector.
 
-En base los puntos planteados se pretende implementar una calculadora básica de dos números de 8 bits (16 variables de entrada) utilizando un circuito integrado sumador: LS74283 y el concepto de multiplexores para diseñar una configuración que permita multiplezar las salidas de suma y resta para visualizar su resultado en displays de 7 segmentos.
+En base los puntos planteados se pretende implementar una calculadora básica de dos números de 8 bits (16 variables de entrada) utilizando un circuito integrado sumador: LS74283 y el concepto de multiplexores para diseñar una configuración que permita multiplexar las salidas de suma y resta para visualizar su resultado en displays de 7 segmentos.
 
 
 ### 2. OBJETIVOS
