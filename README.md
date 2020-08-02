@@ -137,6 +137,98 @@ Un multiplexor requiere un demultiplexor para completar el proceso, es decir, pa
 
 **Figura:** Multiplexor
 
+**Circuitos Aritméticos**
+
+Dentro de la variada gama de circuitos digitales, tenemos los denominados circuitos aritméticos que son dispositivos que pueden realizar operaciones aritméticas (suma, 
+resta, multiplicación y división) en formato binario o BCD, punto fijo o punto flotante. 
+
+Dependiendo de la función a realizar, tenemos sumadores, restadores, multiplicadores, divisores y funciones combinadas de los mismos para realizar operaciones complejas como por 
+ejemplo el cálculo de raíz cuadrada, exponenciales, etc.
+
+Si bien es posible generar funciones complejas en base al uso de un microprocesador, a través de algoritmos que se corren en un programa, la posibilidad de generar dichas 
+funciones en hardware, en muchos casos, presentan ventajas en cuanto a velocidad y/o el empleo de menores recursos lógicos, como es el caso de la ausencia de un micro para realizarlas (Hoyos Padilla, 2010).
+
+**Sumadores**
+
+La suma o adición binaria es análoga a la de los números decimales. La diferencia radica en que en los números binarios se produce un acarreo (carry) cuando la suma excede de uno mientras en decimal se produce un acarreo cuando la suma excede de nueve (Hoyos Padilla, 2010).
+
+ ![jf1](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf1.jpg)
+
+**Figura 1:** Reglas de la Suma Binaria
+
+**Semisumador**
+
+Se denomina semisumador a un circuito que admite dos bits como entrada y genera  como salida  un bit que representa la suma de los dos bits de entrada y otro bit que representa 
+el acarreo generado por la suma.
+
+La tabla de verdad de este circuito puede deducirse a partir de las La tabla de verdad de este circuito puede deducirse a partir de las reglas de la suma binaria (Véase Fig.2).
+
+![jf2](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf2.png)
+
+**Figura 2:** Tabla de verdad del Semisumador.
+
+A partir de esta tabla de verdad se puede observar que la suma puede implementarse con una operación XOR y el acarreo de salida con una operación AND(Canaria, 2012).
+
+![jf3](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf3.png)
+
+**Figura 3:** Esquema del Semisumador
+
+**Sumador Completo**
+
+La principal diferencia diferencia entre un sumador completo y un semisumador es que el sumador completo admite un valor que representa un acarreo de entrada.
+
+ ![jf4](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf4.png)
+ 
+ **Figura 4:** Tabla de verdad del Sumador Completo
+
+Dado que la suma de dos bits está dada la operación XOR, también podemos expresar dicha suma  con un acarreo de la siguiente forma:
+
+![jf5](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf5.png)
+
+**Figura 5:** Expresión lógica del Sumador Completo
+
+El acarreo de salida sera 1 entonces cuando A y B sean 1 o cuando A+B sea 1 al igual que el acarreo de entrada.
+
+![jf6](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf6.png)
+
+**Figura 6:** Expresión Lógica
+
+De esta forma se puede implementar el circuito sumador completo usando dos compuertas XOR, dos compuestas AND y una compuerta OR.
+
+![jf7](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf7.png)
+
+**Figura 7:** Esquema del Sumador Completo
+
+También es posible implementar el sumador completo utilizando dos circuitos semisumadores, el primer semisumador suma los dos bits, el segundo suma el resultado con el acarreo 
+de entrada y habrá acarreo de salida si cualquiera  de los dos semisumadores genera un acarreo.
+
+![jf8](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf8.png)
+
+**Figura 8:** Sumador COmpleto a Partir de Semisumadores en Cascada
+
+**Sumadores con Acarreo en Cascada**
+
+El circuito sumador completo permite sumar dos números de un bit con un acarreo de entrada y generar un acarreo de salida. Como regla general, un sumador binario de cualquier número de bits puede realizarse conectando en cascada varios sumadores completos de un bit.
+
+El proceso puede extenderse usando cuaquier sumador como elemento básico: por ejemplo puede hacerse un suamdor de 4 bits a partir de dos sumadores de 2 bits.
+
+![jf9](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf9.png)
+
+**Figura 9:** Sumadore de 4 bits
+
+El principal problema de esta conexión en serie de sumadores es que el retardo del circuito depende de la propagación del acarreo a lo largo de todo el sumador.
+
+![jf10](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf10.png)
+
+**Figura 10:** Sumador de 8 bits 
+
+Para la implementación del sumador de 8 bits se dio uso al integrado 74283
+
+![jf11](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf11.jpg)
+
+**Figura 11:** Integrado 74283
+
+
 ### 5. DIAGRAMAS
 #### 5.1 Diagrama de Funcionamiento
 
@@ -224,6 +316,19 @@ https://teoriadelastelecomunicaciones.files.wordpress.com/2011/11/multiplexacion
 https://www.wikiversus.com/tv/que-es-multiplex/
 
 https://personales.unican.es/manzanom/Planantiguo/EDigitalI/MuxG7_09.pdf
+
+https://wilaebaelectronica.blogspot.com/2017/01/sumador-binario.html
+
+https://iesbernatguinovart.com/04v_tecnologia/carpeta_arxius/elec%20dig%20basica.pdf
+
+https://www.studocu.com/pe/document/universidad-nacional-del-callao/circuitos-digitales-turno-01t-ciclo-5/informe/circuitos-aritmeticos/5637738/view
+
+http://homepage.cem.itesm.mx/garcia.andres/PDF201411/Aritmetica(Basis).pdf
+
+http://circuitos-aritmeticos.blogspot.com/
+
+http://serdis.dis.ulpgc.es/~gii-fc/material_clases_teoria/Tema3/Tema3_1_Componentes_combinacionales_FC_GII.pdf
+
 
 ### 15. ANEXOS
 
