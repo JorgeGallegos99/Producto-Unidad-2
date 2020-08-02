@@ -9,7 +9,7 @@ Cuando se utilizan compuertas lógicas OR (suma) se tiene un número limitado de
 
 Para esta limitante se emplean los circuitos integrados sumadores; un solo integrado de este tipo realiza la suma de hasta 8 variables de entrada (dos números 4 bits) lo cual facilita el diseño, interpretación, optimización e implementación para el caso de 8bits por número ingresado, con dos integrados sumadores el proceso suma estará resuelto; 4 integrados sumadores junto con copuertas XOR, OR y NOT permiten el proceso de resta con signo.
 
-Considerando las operaciones de suma y resta se tiene la idea de una calculadora binaria que debe tener una sola salida, para este proceso existen los multiplexores,integrados que agrupan cierto número de variables de entrada y la llevan a una salida dependiendo de un selector.
+Considerando las operaciones de suma y resta se tiene la idea de una calculadora binaria que debe tener una sola salida, para este proceso existen los multiplexores, integrados que agrupan cierto número de variables de entrada y la llevan a una única salida dependiendo de un selector.
 
 En base los puntos planteados se pretende implementar una calculadora básica de dos números de 8 bits (16 variables de entrada) utilizando un circuito integrado sumador: LS74283 y el concepto de multiplexores para diseñar una configuración que permita multiplezar las salidas de suma y resta para visualizar su resultado en displays de 7 segmentos.
 
