@@ -284,8 +284,6 @@ Donde: B0 es el bit menos significativo y B7 es el más significativo
 M8,M7,M6,M5,M4,M3,M2,M1,M0
 Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
-**Figura :** Salidas del Sumador
-
 * Para realizar el proceso de la suma binaria se utiliza el circuito integrado 74LS283 que cumple la función de sumador.
 
 ![Sumador LS74283](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUM.png)
@@ -322,25 +320,25 @@ M8=Acarreo de salida del segundo sumador
 
 ![Complemento a 1](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/COMPLEMENTO1.PNG)
 
-**Figura :** 
+**Figura:** Complemento a 1 
 
 Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
 
 ![Negacion de B](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/NEGADO.png)
 
-**Figura :** 
+**Figura :** Negación de B
 
 Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
 
 ![XOR](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA1.png)
 
-**Figura :** 
+**Figura :** XOR en la resta
 
 Para un sumador completo de 8 Bits se debe realizar el mismo proceso de complemento a 1 para los 4 bits restantes de ambos números ingresados. De esta forma el restador completo de 8 Bits con signo se establece de la siguiente forma:
 
 ![Restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA.png)
 
-**Figura :** 
+**Figura :** Restador
 
 Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
 Donde:
@@ -358,19 +356,19 @@ El signo del restador completo está dado por la suma de los signos correspondie
 
 ![Signo del restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SIGNO.png)
 
-**Figura :** 
+**Figura :** Signo del restador
 
 Las salidas del sumador y restador deben mostrar un solo resultado dependiendo de la operación que se elija por medio de un selector: 
 
 ![Selector](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SELECTOR.png)
 
-**Figura :** 
+**Figura :** Selector
 
 Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos entradas y una salida. Existen integrados como el 74HC153 que realizan el proceso de multiplexar las salidas:
 
 ![Multiplexores 74HC153](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/MULTIPLEXORES.png)
 
-**Figura :** 
+**Figura :** Multiplexores 74HC153
 
 Las entradas de estos MUX estan conformadas por las salidas del circuito sumador y restador, es decir:
 M0-M7-ACARREO(M8): SUMA
@@ -384,7 +382,7 @@ Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya co
 
 ![MUX](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Mux.png)
 
-**Figura :** 
+**Figura :** MUX
 
 * Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 8 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
 
