@@ -263,7 +263,7 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 ### 8. EXPLICACIÓN DEL CÓDIGO FUENTE
 * Para realizar el circuito sumador de dos números de 8 bits primero se definen las variables de entrada y salida que tendrá el circuito, todas se encuentran en lógica positiva y se presentan de la siguiente forma:
 
-![Diagrama de bloques: Sumador 8 Bits](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/ENTRADAS.png)
+![Diagrama de bloques: Sumador 8 Bits]()
 
 **Figura :** Diagrama de bloques: Sumador 8 Bits
 
@@ -275,7 +275,7 @@ Donde: A0 es el bit menos significativo y A7 es el más significativo
 **Número B**: B7, B6, B5, B4, B3, B2, B1, B0
 Donde: B0 es el bit menos significativo y B7 es el más significativo
 
-![Entradas en DIPSW](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/DIPSENTRADAS.PNG)
+![Entradas en DIPSW]()
 
 **Figura :** Entradas en DIPSW
 
@@ -288,7 +288,7 @@ Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
 * Para realizar el proceso de la suma binaria se utiliza el circuito integrado 74LS283 que cumple la función de sumador.
 
-![Sumador LS74283](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SUM.png)
+![Sumador LS74283]()
 
 **Figura :** Sumador LS74283
 
@@ -296,13 +296,13 @@ Donde A0 - A3 representan los cuatro primeros bits del número A y B0 - B3 del n
 
 Para que se cumpla el proceso se debe conocer las reglas de la suma binaria:
 
-![Reglas de la suma binaria](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/REGLASUMA.PNG)
+![Reglas de la suma binaria]()
 
 **Figura :** Reglas de la suma binaria
 
 El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y salida, entonces para realizar la conexión en cascada: el acarreo de salida del primer sumador es el acarreo de entrada del segundo, por lo tanto, ambos se encuentran conectados y en las entradas del integrado se colocan las cuatro variables restantes de los números A y B, las cuales son: A4 - A7 y B4 - B7 identificando la conexión de los bits más y menos significativos.
 
-![Conexión en cascada](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SUMCASCADA.png)
+![Conexión en cascada]()
 
 **Figura:** Conexión en cascada
 
@@ -323,22 +323,22 @@ M8=Acarreo de salida del segundo sumador
 
 * Para el circuito restador se utiliza el complemento a 1:
 
-![Complemento a 1](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/COMPLEMENTO1.PNG)
+![Complemento a 1]()
 **Figura :** 
 
 Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
 
-![Negacion de B](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/NEGADO.png)
+![Negacion de B]()
 **Figura :** 
 
 Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
 
-![XOR](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/RESTA1.PNG)
+![XOR]()
 **Figura :** 
 
 Para un sumador completo de 8 Bits se debe realizar el mismo proceso de complemento a 1 para los 4 bits restantes de ambos números ingresados. De esta forma el restador completo de 8 Bits con signo se establece de la siguiente forma:
 
-![Restador](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/RESTA.PNG)
+![Restador]()
 **Figura :** 
 
 Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
@@ -355,17 +355,17 @@ S=SIGNO
 
 El signo del restador completo está dado por la suma de los signos correspondientes a los primeros 4 bits de los números y los 4 bits siguientes:
 
-![Signo del restador](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SIGNO.PNG)
+![Signo del restador]()
 **Figura :** 
 
 Las salidas del sumador y restador deben mostrar un solo resultado dependiendo de la operación que se elija por medio de un selector: 
 
-![Selector](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SELECTOR.PNG)
+![Selector]()
 **Figura :** 
 
 Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos entradas y una salida. Existen integrados como el 74HC153 que realizan el proceso de multiplexar las salidas:
 
-![Multiplexores 74HC153](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/MULTIPLEXORES.PNG)
+![Multiplexores 74HC153]()
 **Figura :** 
 
 Las entradas de estos MUX estan conformadas por las salidas del circuito sumador y restador, es decir:
@@ -378,32 +378,26 @@ G0-G7 + (G8: ACARREO SUMA, G9: SIGNO RESTA)
 
 Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya conocidas: AND, OR, NOT. Para un MUX 2:1 la configuración es la siguiente:
 
-![MUX](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/Mux.PNG)
+![MUX]()
 **Figura :** 
 
 * Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 8 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
 
-![Decodificador 4511](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/DECODIFICADOR.PNG)
+![Decodificador 4511]()
 
 **Figura :** Decodificador 4511
 
 * Para conectar el display se debe tomar en cuenta la estructura que posee, para este circuito se usa un display 7 segmentos cátodo común. Esto quiere decir que el pin común del display debe ir conectado a tierra:
 
-![Display 7 seg catodo común](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/DISPLAY.PNG)
+![Display 7 seg catodo común]()
 
 **Figura:** Display 7 seg catodo común
 
 * El resultado se todos estos procesos da un circuito sumador/restador de dos números de 8 bits como se muestra a continuación en el software de simulación Proteus:
 
-![Simulación Proteus](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SimulacionProteus.png)
+![Simulación Proteus]()
 
 **Figura:** Simulación Proteus
-
-* La implementación del circuito en el laboratorio virtual Tinkercad se presenta de la siguiente forma:
-
-![Simulación Tinkercad](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SimulacionTinkercad.png)
-
-**Figura 29:** Simulación Tinkercad
 
 
 ### 9. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN
