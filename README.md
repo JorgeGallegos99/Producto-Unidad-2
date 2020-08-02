@@ -296,13 +296,13 @@ Donde A0 - A3 representan los cuatro primeros bits del número A y B0 - B3 del n
 
 Para que se cumpla el proceso se debe conocer las reglas de la suma binaria:
 
-![Reglas de la suma binaria]()
+![Reglas de la suma binaria](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/REGLASUMA.PNG)
 
 **Figura :** Reglas de la suma binaria
 
 El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y salida, entonces para realizar la conexión en cascada: el acarreo de salida del primer sumador es el acarreo de entrada del segundo, por lo tanto, ambos se encuentran conectados y en las entradas del integrado se colocan las cuatro variables restantes de los números A y B, las cuales son: A4 - A7 y B4 - B7 identificando la conexión de los bits más y menos significativos.
 
-![Conexión en cascada]()
+![Conexión en cascada](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUMCASCADA.png)
 
 **Figura:** Conexión en cascada
 
@@ -317,9 +317,6 @@ M5=A5+B5
 M6=A6+B6
 M7=A7+BB7
 M8=Acarreo de salida del segundo sumador
-
-![Resultado de la suma binaria representado con LEDS]()
-**Figura :** 
 
 * Para el circuito restador se utiliza el complemento a 1:
 
@@ -355,12 +352,12 @@ S=SIGNO
 
 El signo del restador completo está dado por la suma de los signos correspondientes a los primeros 4 bits de los números y los 4 bits siguientes:
 
-![Signo del restador]()
+![Signo del restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SIGNO.png)
 **Figura :** 
 
 Las salidas del sumador y restador deben mostrar un solo resultado dependiendo de la operación que se elija por medio de un selector: 
 
-![Selector]()
+![Selector](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SELECTOR.png)
 **Figura :** 
 
 Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos entradas y una salida. Existen integrados como el 74HC153 que realizan el proceso de multiplexar las salidas:
@@ -395,7 +392,7 @@ Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya co
 
 * El resultado se todos estos procesos da un circuito sumador/restador de dos números de 8 bits como se muestra a continuación en el software de simulación Proteus:
 
-![Simulación Proteus]()
+![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SimulacionProteus.png)
 
 **Figura:** Simulación Proteus
 
