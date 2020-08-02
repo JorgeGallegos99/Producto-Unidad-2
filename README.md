@@ -281,8 +281,8 @@ Donde: B0 es el bit menos significativo y B7 es el más significativo
 
 **Salidas**
 
-S8, S7, S6, S5, S4, S3, S2, S1, S0
-Donde: S0 es el bit menos significativo y S8 (acarreo) es el más significativo.
+M8,M7,M6,M5,M4,M3,M2,M1,M0
+Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
 ![Salidas del Sumador](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SALIDAS1.PNG)
 
@@ -310,21 +310,80 @@ El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y sal
 
  * Las salidas de los sumadores representan el resultado de la suma realizada por el circuito integrado y se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
 Donde:
-S0=A0+B0
-S1=A1+B1
-S2=A2+B2
-S3=A3+B3
-S4=A4+B4
-S5=A5+B5
-S6=A6+B6
-S7=A7+BB7
-S8=Acarreo de salida del segundo sumador
+M0=A0+B0
+M1=A1+B1
+M2=A2+B2
+M3=A3+B3
+M4=A4+B4
+M5=A5+B5
+M6=A6+B6
+M7=A7+BB7
+M8=Acarreo de salida del segundo sumador
 
 ![Resultado de la suma binaria representado con LEDS](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SALIDAS.PNG)
+**Figura :** 
 
-**Figura :** Resultado de la suma binaria representado con LEDS
+* Para el circuito restador se utiliza el complemento a 1:
 
-* Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de cada sumador y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
+![Complemento a 1](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/COMPLEMENTO1.PNG)
+**Figura :** 
+
+Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
+
+![Negacion de B](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/NEGADO.PNG)
+**Figura :** 
+
+Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
+
+![XOR](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/RESTA1.PNG)
+**Figura :** 
+
+Para un sumador completo de 8 Bits se debe realizar el mismo proceso de complemento a 1 para los 4 bits restantes de ambos números ingresados. De esta forma el restador completo de 8 Bits con signo se establece de la siguiente forma:
+
+![Restador](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/RESTA.PNG)
+**Figura :** 
+
+Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
+Donde:
+N0=A0+B0
+N1=A1+B1
+N2=A2+B2
+N3=A3+B3
+N4=A4+B4
+N5=A5+B5
+N6=A6+B6
+N7=A7+BB7
+S=SIGNO
+
+El signo del restador completo está dado por la suma de los signos correspondientes a los primeros 4 bits de los números y los 4 bits siguientes:
+
+![Signo del restador](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SIGNO.PNG)
+**Figura :** 
+
+Las salidas del sumador y restador deben mostrar un solo resultado dependiendo de la operación que se elija por medio de un selector: 
+
+![Selector](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SELECTOR.PNG)
+**Figura :** 
+
+Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos entradas y una salida. Existen integrados como el 74HC153 que realizan el proceso de multiplexar las salidas:
+
+![Multiplexores 74HC153](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/MULTIPLEXORES.PNG)
+**Figura :** 
+
+Las entradas de estos MUX estan conformadas por las salidas del circuito sumador y restador, es decir:
+M0-M7-ACARREO(M8): SUMA
+N0-N7-(SIGNO): RESTA
+Selector: 1 suma, 0 resta
+
+Las salidas del MUX dependerán del selector y será:
+G0-G7 + (G8: ACARREO SUMA, G9: SIGNO RESTA)
+
+Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya conocidas: AND, OR, NOT. Para un MUX 2:1 la configuración es la siguiente:
+
+![MUX](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/MUX.PNG)
+**Figura :** 
+
+* Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 8 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
 
 ![Decodificador 4511](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/DECODIFICADOR.PNG)
 
@@ -336,7 +395,7 @@ S8=Acarreo de salida del segundo sumador
 
 **Figura:** Display 7 seg catodo común
 
-* El resultado se todos estos procesos da un circuito sumador de dos números de 8 bits como se muestra a continuación en el software de simulación Proteus:
+* El resultado se todos estos procesos da un circuito sumador/restador de dos números de 8 bits como se muestra a continuación en el software de simulación Proteus:
 
 ![Simulación Proteus](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SimulacionProteus.png)
 
