@@ -263,7 +263,7 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 ### 8. EXPLICACIÓN DEL CÓDIGO FUENTE
 * Para realizar el circuito sumador de dos números de 8 bits primero se definen las variables de entrada y salida que tendrá el circuito, todas se encuentran en lógica positiva y se presentan de la siguiente forma:
 
-![Diagrama de bloques: Sumador 8 Bits]()
+![Diagrama de bloques: Sumador 8 Bits](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/ENTRADAS.png)
 
 **Figura :** Diagrama de bloques: Sumador 8 Bits
 
@@ -275,7 +275,7 @@ Donde: A0 es el bit menos significativo y A7 es el más significativo
 **Número B**: B7, B6, B5, B4, B3, B2, B1, B0
 Donde: B0 es el bit menos significativo y B7 es el más significativo
 
-![Entradas en DIPSW]()
+![Entradas en DIPSW](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DIPSENTRADAS.PNG)
 
 **Figura :** Entradas en DIPSW
 
@@ -288,7 +288,7 @@ Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
 * Para realizar el proceso de la suma binaria se utiliza el circuito integrado 74LS283 que cumple la función de sumador.
 
-![Sumador LS74283]()
+![Sumador LS74283](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUM.png)
 
 **Figura :** Sumador LS74283
 
@@ -320,22 +320,26 @@ M8=Acarreo de salida del segundo sumador
 
 * Para el circuito restador se utiliza el complemento a 1:
 
-![Complemento a 1]()
+![Complemento a 1](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/COMPLEMENTO1.PNG)
+
 **Figura :** 
 
 Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
 
-![Negacion de B]()
+![Negacion de B](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/NEGADO.png)
+
 **Figura :** 
 
 Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
 
-![XOR]()
+![XOR](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA1.png)
+
 **Figura :** 
 
 Para un sumador completo de 8 Bits se debe realizar el mismo proceso de complemento a 1 para los 4 bits restantes de ambos números ingresados. De esta forma el restador completo de 8 Bits con signo se establece de la siguiente forma:
 
-![Restador]()
+![Restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA.png)
+
 **Figura :** 
 
 Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
@@ -353,16 +357,19 @@ S=SIGNO
 El signo del restador completo está dado por la suma de los signos correspondientes a los primeros 4 bits de los números y los 4 bits siguientes:
 
 ![Signo del restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SIGNO.png)
+
 **Figura :** 
 
 Las salidas del sumador y restador deben mostrar un solo resultado dependiendo de la operación que se elija por medio de un selector: 
 
 ![Selector](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SELECTOR.png)
+
 **Figura :** 
 
 Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos entradas y una salida. Existen integrados como el 74HC153 que realizan el proceso de multiplexar las salidas:
 
-![Multiplexores 74HC153]()
+![Multiplexores 74HC153](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/MULTIPLEXORES.png)
+
 **Figura :** 
 
 Las entradas de estos MUX estan conformadas por las salidas del circuito sumador y restador, es decir:
@@ -375,18 +382,23 @@ G0-G7 + (G8: ACARREO SUMA, G9: SIGNO RESTA)
 
 Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya conocidas: AND, OR, NOT. Para un MUX 2:1 la configuración es la siguiente:
 
-![MUX]()
+![MUX](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Mux.png)
+
 **Figura :** 
 
 * Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 8 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
 
-![Decodificador 4511]()
+![Decodificador 8Bits a BCD](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECO.png)
+
+**Figura :** Decodificador 8Bits a BCD
+
+![Decodificador 4511](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECODIFICADOR.PNG)
 
 **Figura :** Decodificador 4511
 
 * Para conectar el display se debe tomar en cuenta la estructura que posee, para este circuito se usa un display 7 segmentos cátodo común. Esto quiere decir que el pin común del display debe ir conectado a tierra:
 
-![Display 7 seg catodo común]()
+![Display 7 seg catodo común](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAY.PNG)
 
 **Figura:** Display 7 seg catodo común
 
