@@ -305,15 +305,25 @@ El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y sal
 **Figura:** Conexión en cascada
 
  * Las salidas de los sumadores representan el resultado de la suma realizada por el circuito integrado y se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
+ 
 Donde:
+
 M0=A0+B0
+
 M1=A1+B1
+
 M2=A2+B2
+
 M3=A3+B3
+
 M4=A4+B4
+
 M5=A5+B5
+
 M6=A6+B6
+
 M7=A7+BB7
+
 M8=Acarreo de salida del segundo sumador
 
 * Para el circuito restador se utiliza el complemento a 1:
@@ -341,15 +351,25 @@ Para un sumador completo de 8 Bits se debe realizar el mismo proceso de compleme
 **Figura :** Restador
 
 Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
+
 Donde:
+
 N0=A0+B0
+
 N1=A1+B1
+
 N2=A2+B2
+
 N3=A3+B3
+
 N4=A4+B4
+
 N5=A5+B5
+
 N6=A6+B6
+
 N7=A7+BB7
+
 S=SIGNO
 
 El signo del restador completo está dado por la suma de los signos correspondientes a los primeros 4 bits de los números y los 4 bits siguientes:
@@ -371,11 +391,15 @@ Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos e
 **Figura :** Multiplexores 74HC153
 
 Las entradas de estos MUX estan conformadas por las salidas del circuito sumador y restador, es decir:
+
 M0-M7-ACARREO(M8): SUMA
+
 N0-N7-(SIGNO): RESTA
+
 Selector: 1 suma, 0 resta
 
 Las salidas del MUX dependerán del selector y será:
+
 G0-G7 + (G8: ACARREO SUMA, G9: SIGNO RESTA)
 
 Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya conocidas: AND, OR, NOT. Para un MUX 2:1 la configuración es la siguiente:
