@@ -120,6 +120,10 @@ De manera similar, en algunas redes ópticas, los datos de los diferentes canale
 
 Todas estas técnicas utilizan básicamente el mismo concepto. La FDM se usa en la radiodifusión y la televisión, mientras que la WDM se utiliza en las telecomunicaciones y las redes informáticas que utilizan sistemas láser (que generan las señales enviadas a través de cables de fibra óptica).
 
+![multiplexacion](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Multiplexacion.gif)
+
+**Figura:** Multiplexacion 
+
 **Multiplexor**
 
 Un multiplexor, abreviado como “MUX” o “MPX”, es un dispositivo, circuito lógico combinatorio, que permite seleccionar una o más señales de entrada analógicas o digitales de baja velocidad, combinarlas y transmitirlas a mayor velocidad en un único medio compartido o dentro de un único dispositivo compartido.
@@ -129,6 +133,9 @@ Los multiplexores funcionan como interruptores rotativos de posición múltiple 
 
 Un multiplexor requiere un demultiplexor para completar el proceso, es decir, para separar las señales de multiplexación transportadas por el único medio o dispositivo compartido. A menudo un multiplexor y un demultiplexor se combinan en un solo dispositivo (también llamado a menudo simplemente multiplexor) permitiendo que el dispositivo procese tanto las señales entrantes como las salientes. Alternativamente, la salida única de un multiplexor puede conectarse a la entrada única de un demultiplexor a través de un solo canal. Cualquiera de los dos métodos se utiliza a menudo como medida de ahorro de costes. Dado que la mayoría de los sistemas de comunicación transmiten en ambas direcciones, se necesitará el dispositivo único combinado, o dos dispositivos separados (en el último ejemplo), en ambos extremos de la línea de transmisión.
 
+![Multiplexor](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Multiplexor.png)
+
+**Figura:** Multiplexor
 
 ### 5. DIAGRAMAS
 #### 5.1 Diagrama de Funcionamiento
