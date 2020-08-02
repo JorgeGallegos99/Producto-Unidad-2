@@ -284,8 +284,6 @@ Donde: B0 es el bit menos significativo y B7 es el más significativo
 M8,M7,M6,M5,M4,M3,M2,M1,M0
 Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
-![Salidas del Sumador](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SALIDAS1.PNG)
-
 **Figura :** Salidas del Sumador
 
 * Para realizar el proceso de la suma binaria se utiliza el circuito integrado 74LS283 que cumple la función de sumador.
@@ -320,7 +318,7 @@ M6=A6+B6
 M7=A7+BB7
 M8=Acarreo de salida del segundo sumador
 
-![Resultado de la suma binaria representado con LEDS](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/SALIDAS.PNG)
+![Resultado de la suma binaria representado con LEDS]()
 **Figura :** 
 
 * Para el circuito restador se utiliza el complemento a 1:
@@ -330,7 +328,7 @@ M8=Acarreo de salida del segundo sumador
 
 Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
 
-![Negacion de B](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/NEGADO.PNG)
+![Negacion de B](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/NEGADO.png)
 **Figura :** 
 
 Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
@@ -380,7 +378,7 @@ G0-G7 + (G8: ACARREO SUMA, G9: SIGNO RESTA)
 
 Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya conocidas: AND, OR, NOT. Para un MUX 2:1 la configuración es la siguiente:
 
-![MUX](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/MUX.PNG)
+![MUX](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/Mux.PNG)
 **Figura :** 
 
 * Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 8 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
