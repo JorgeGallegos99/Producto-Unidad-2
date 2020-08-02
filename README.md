@@ -300,7 +300,7 @@ Para que se cumpla el proceso se debe conocer las reglas de la suma binaria:
 
 El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y salida, entonces para realizar la conexión en cascada: el acarreo de salida del primer sumador es el acarreo de entrada del segundo, por lo tanto, ambos se encuentran conectados y en las entradas del integrado se colocan las cuatro variables restantes de los números A y B, las cuales son: A4 - A7 y B4 - B7 identificando la conexión de los bits más y menos significativos.
 
-![Conexión en cascada](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUMCASCADA.png)
+![Conexión en cascada](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CASCADA.png)
 
 **Figura:** Conexión en cascada
 
