@@ -132,7 +132,7 @@ De manera similar, en algunas redes ópticas, los datos de los diferentes canale
 
 Todas estas técnicas utilizan básicamente el mismo concepto. La FDM se usa en la radiodifusión y la televisión, mientras que la WDM se utiliza en las telecomunicaciones y las redes informáticas que utilizan sistemas láser (que generan las señales enviadas a través de cables de fibra óptica).
 
-![multiplexacion](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Multiplexacion.gif)
+![Multiplexacion.gif](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Multiplexacion.gif)
 
 **Figura 1.** Multiplexacion 
 
