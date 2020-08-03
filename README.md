@@ -132,7 +132,7 @@ Todas estas técnicas utilizan básicamente el mismo concepto. La FDM se usa en 
 
 ![multiplexacion](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Multiplexacion.gif)
 
-**Figura 1:** Multiplexacion 
+**Figura 1.** Multiplexacion 
 
 **Multiplexor**
 
@@ -145,7 +145,7 @@ Un multiplexor requiere un demultiplexor para completar el proceso, es decir, pa
 
 ![Multiplexor](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Multiplexor.png)
 
-**Figura 2:** Multiplexor
+**Figura 2.** Multiplexor
 
 **Circuitos Aritméticos**
 
@@ -164,7 +164,7 @@ La suma o adición binaria es análoga a la de los números decimales. La difere
 
  ![jf1](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf1.jpg)
 
-**Figura 3* Reglas de la Suma Binaria
+**Figura 3.** Reglas de la Suma Binaria
 
 **Semisumador**
 
@@ -175,13 +175,13 @@ La tabla de verdad de este circuito puede deducirse a partir de las La tabla de 
 
 ![jf2](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf2.png)
 
-**Figura 4** Tabla de verdad del Semisumador.
+**Figura 4.** Tabla de verdad del Semisumador.
 
 A partir de esta tabla de verdad se puede observar que la suma puede implementarse con una operación XOR y el acarreo de salida con una operación AND(Canaria, 2012).
 
 ![jf3](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf3.png)
 
-**Figura 5** Esquema del Semisumador
+**Figura 5.** Esquema del Semisumador
 
 **Sumador Completo**
 
@@ -189,32 +189,32 @@ La principal diferencia diferencia entre un sumador completo y un semisumador es
 
  ![jf4](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf4.png)
  
- **Figura 6** Tabla de verdad del Sumador Completo
+ **Figura 6.** Tabla de verdad del Sumador Completo
 
 Dado que la suma de dos bits está dada la operación XOR, también podemos expresar dicha suma  con un acarreo de la siguiente forma:
 
 ![jf5](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf5.png)
 
-**Figura 7** Expresión lógica del Sumador Completo
+**Figura 7.** Expresión lógica del Sumador Completo
 
 El acarreo de salida sera 1 entonces cuando A y B sean 1 o cuando A+B sea 1 al igual que el acarreo de entrada.
 
 ![jf6](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf6.png)
 
-**Figura 8** Expresión Lógica
+**Figura 8.** Expresión Lógica
 
 De esta forma se puede implementar el circuito sumador completo usando dos compuertas XOR, dos compuestas AND y una compuerta OR.
 
 ![jf7](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf7.png)
 
-**Figura 9** Esquema del Sumador Completo
+**Figura 9.** Esquema del Sumador Completo
 
 También es posible implementar el sumador completo utilizando dos circuitos semisumadores, el primer semisumador suma los dos bits, el segundo suma el resultado con el acarreo 
 de entrada y habrá acarreo de salida si cualquiera  de los dos semisumadores genera un acarreo.
 
 ![jf8](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf8.png)
 
-**Figura 10* Sumador COmpleto a Partir de Semisumadores en Cascada
+**Figura 10.** Sumador COmpleto a Partir de Semisumadores en Cascada
 
 **Sumadores con Acarreo en Cascada**
 
@@ -224,19 +224,19 @@ El proceso puede extenderse usando cuaquier sumador como elemento básico: por e
 
 ![jf9](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf9.png)
 
-**Figura 1* Sumadore de 4 bits
+**Figura 11.** Sumadore de 4 bits
 
 El principal problema de esta conexión en serie de sumadores es que el retardo del circuito depende de la propagación del acarreo a lo largo de todo el sumador.
 
 ![jf10](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf10.png)
 
-**Figura 12** Sumador de 8 bits 
+**Figura 12.** Sumador de 8 bits 
 
 Para la implementación del sumador de 8 bits se dio uso al integrado 74283
 
 ![jf11](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/jf11.jpg)
 
-**Figura 13** Integrado 74283
+**Figura 13.** Integrado 74283
 
 La resta se implementa mediante un sumador. El método consiste en llevar al minuendo a una de las entradas y el sustraendo en complemento 2 a la otra entrada.
 
@@ -244,18 +244,18 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 ![Restador Completo](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Restador%20Completo.gif)
 
-**Figura 14:** Restador Completo
+**Figura 14.** Restador Completo
 
 ### 5. DIAGRAMAS
 #### 5.1 Diagrama de Funcionamiento
 
 ![bloques_Funcionamiento.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/bloques_Funcionamiento.JPG)
 
-**Figura :** Funcionamiento del Circuito.
+**Figura 15.** Funcionamiento del Circuito.
 
 ![variables.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/variables.JPG)
 
-**Figura :** Variables de entrada y de Salida del circuito ALU
+**Figura 16.** Variables de entrada y de Salida del circuito ALU
 
 
 ### 6. LISTA DE COMPONENTES
@@ -277,7 +277,7 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 ![Diagrama de bloques: Sumador 8 Bits](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/ENTRADAS.png)
 
-**Figura :** Diagrama de bloques: Sumador 8 Bits
+**Figura .** Diagrama de bloques: Sumador 8 Bits
 
 **Entradas**
 
@@ -289,7 +289,7 @@ Donde: B0 es el bit menos significativo y B7 es el más significativo
 
 ![Entradas en DIPSW](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DIPSENTRADAS.PNG)
 
-**Figura :** Entradas en DIPSW
+**Figura .** Entradas en DIPSW
 
 **Salidas**
 
@@ -301,7 +301,7 @@ Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
 ![Sumador LS74283](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUM.png)
 
-**Figura :** Sumador LS74283
+**Figura .** Sumador LS74283
 
 Donde A0 - A3 representan los cuatro primeros bits del número A y B0 - B3 del número B, sin embargo, los números de las entradas son de 8 Bits de magnitud entonces para realizar la suma se necesita realizar una conexión en cascada entre dos sumadores.
 
@@ -309,13 +309,13 @@ Para que se cumpla el proceso se debe conocer las reglas de la suma binaria:
 
 ![Reglas de la suma binaria](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/REGLASUMA.PNG)
 
-**Figura :** Reglas de la suma binaria
+**Figura .** Reglas de la suma binaria
 
 El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y salida, entonces para realizar la conexión en cascada: el acarreo de salida del primer sumador es el acarreo de entrada del segundo, por lo tanto, ambos se encuentran conectados y en las entradas del integrado se colocan las cuatro variables restantes de los números A y B, las cuales son: A4 - A7 y B4 - B7 identificando la conexión de los bits más y menos significativos.
 
 ![Conexión en cascada](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CASCADA.png)
 
-**Figura:** Conexión en cascada
+**Figura .** Conexión en cascada
 
  * Las salidas de los sumadores representan el resultado de la suma realizada por el circuito integrado y se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
  
@@ -343,25 +343,25 @@ M8=Acarreo de salida del segundo sumador
 
 ![Complemento a 1](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/COMPLEMENTO1.PNG)
 
-**Figura:** Complemento a 1 
+**Figura .** Complemento a 1 
 
 Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
 
 ![Negacion de B](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/NEGADO.png)
 
-**Figura :** Negación de B
+**Figura .** Negación de B
 
 Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
 
 ![XOR](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA1.png)
 
-**Figura :** XOR en la resta
+**Figura ** XOR en la resta
 
 Para un sumador completo de 8 Bits se debe realizar el mismo proceso de complemento a 1 para los 4 bits restantes de ambos números ingresados. De esta forma el restador completo de 8 Bits con signo se establece de la siguiente forma:
 
 ![Restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA.png)
 
-**Figura :** Restador
+**Figura ** Restador
 
 Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
 
