@@ -17,17 +17,24 @@ En base los puntos planteados se pretende implementar una calculadora básica de
 ### 2. OBJETIVOS
 **Objetivo General**
 
-● Diseñar una Unidad Aritmética lógica (ALU) con dos números de 8 bits cada uno y multiplexando las salidas,para su comprobaciòn se requiere la simulación e implementación correspondiente.
+● Diseñar una Calculadora binaria de dos números de 8 bits cada uno el resultado debe mostrarse en Display de 7 segmentos, para su comprobación se requiere la simulación e implementación correspondiente.
+
+Entender el funcionamiento de los sumadores,sus caracteristicas y como se utilizan para armar el circuito Sumador.
+
+Simular el circuito diseñado en el software Proteus y comprobar su funcionamiento.
+Implementar el circuito diseñado en la plataforma virtual Tinkercad.
 
 **Objetivos Específicos**
 
-●	Elaborar una Alu con las operaciones de suma, resta, función or, y función And.
+●	Analizar el funcionamiento de los sumadores para en base a ellos obtener el restador mediante la teoría recibida en clase.
 
-●	Emplear Multiplexores en el integrado 4511 para mostrar en los Displays de 7 segmentos para la visualización de las salidas y el 7483 para la suma.
+● Construir un circuito que permita multiplexar las operaciones de la calculadora binaria de modo que se pueda decidir la operación al utilizarla.
 
-●	Simular la ALU con 4 operaciones, con la herramienta de software Proteus.
+* Utilizar los integrados 74283 para la suma y resta, el decodificador 4511 de bcd a display de 7 segmentos para mostrar el resultado y la compuertas necesarias.
 
-* Implementar el circuito de la Alu diseñado en thinkercad.
+●	Simular la Calculadora Binaria, en la herramienta de software Proteus.
+
+* Implementar el circuito de la Calculadora Binaria en un laboratorio virtual.
 
 ### 3. ESTADO DEL ARTE
 
@@ -259,6 +266,40 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 
 ### 6. LISTA DE COMPONENTES
+
+En la Tabla 1 se muestra las herramientas  de software usadas para la simulacion del circuito se utilizó un simulador y la plataforma para la implementación.
+
+**Tabla 1: Herramientas de Software usadas para el diseño de los 3 circuitos.**
+
+   |     **Herramientas de Software**      |                 
+   |---------------------------------------|
+   |            Proteus                    | 
+   |           Constructor Virtual         |
+  
+   
+**Tabla 2: Datos de los integrados usados para el diseño de Circuito Sumador de 8 bits**
+
+   | **N°**  |   **Integrados** |   **Códigos**    |     
+   |-------  |--------------|----------------|
+   |      13 |   Sumador	  |     74283      |
+   |      3  | Decodificador|     4511       |
+   |      4  | NOT |     7404       |
+   |      2  | EXOR |     7486      |
+   |      7  | AND |     7408      |
+   |      6  | OR |     7432     |
+   
+   
+  
+**Tabla 3: Componentes electronicos del Circuito Sumador de 8 bits**
+
+  | **N°** |**Componentes Electronicos**	|    
+   |-------|------------------------------|
+   |     47|   Resistencias de 330        |    
+   |      2|   Dip Switch 8 entradas      |     
+   |      1|   Fuente de 5 V              |   
+   |      16|   Led Green                 | 
+   |      3|   Display 7 segmentos        | 
+   |      1|   Dip Switch 1 entrada      | 
 
 
 ### 7. MAPA DE VARIABLES
