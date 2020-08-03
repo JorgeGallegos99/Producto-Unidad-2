@@ -19,11 +19,6 @@ En base los puntos planteados se pretende implementar una calculadora básica de
 
 ● Diseñar una Calculadora binaria de dos números de 8 bits cada uno el resultado debe mostrarse en Display de 7 segmentos, para su comprobación se requiere la simulación e implementación correspondiente.
 
-Entender el funcionamiento de los sumadores,sus caracteristicas y como se utilizan para armar el circuito Sumador.
-
-Simular el circuito diseñado en el software Proteus y comprobar su funcionamiento.
-Implementar el circuito diseñado en la plataforma virtual Tinkercad.
-
 **Objetivos Específicos**
 
 ●	Analizar el funcionamiento de los sumadores para en base a ellos obtener el restador mediante la teoría recibida en clase.
@@ -260,10 +255,36 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 **Figura 15.** Funcionamiento del Circuito.
 
+#### 5.2 Diagrama de Funcionamiento
+
 ![variables.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/variables.JPG)
 
 **Figura 16.** Variables de entrada y de Salida del circuito ALU
 
+#### 5.3 DiagramasElectrónicos.
+
+![circuitoProteus.png](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/circuitoProteus.png)
+
+**Figura 17.**  Circuito en Proteus.
+
+
+**Implementacion del circuito  en el Constructor virtual**
+
+![IMPLEM1.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM1.JPG)
+
+**Figura 18.** Parte 1
+
+![IMPLEM2.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM2.JPG)
+
+**Figura 19.** Parte 2
+
+![IMPLEM3.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM3.JPG)
+
+**Figura 20.** Parte 3
+
+![IMPLEM4.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM4.JPG)
+
+**Figura 21.** Parte 4
 
 ### 6. LISTA DE COMPONENTES
 
@@ -318,7 +339,7 @@ En la Tabla 1 se muestra las herramientas  de software usadas para la simulacion
 
 ![Diagrama de bloques: Sumador 8 Bits](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/ENTRADAS.png)
 
-**Figura .** Diagrama de bloques: Sumador 8 Bits
+**Figura 22.** Diagrama de bloques: Sumador 8 Bits
 
 **Entradas**
 
@@ -330,7 +351,7 @@ Donde: B0 es el bit menos significativo y B7 es el más significativo
 
 ![Entradas en DIPSW](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DIPSENTRADAS.PNG)
 
-**Figura .** Entradas en DIPSW
+**Figura 23.** Entradas en DIPSW
 
 **Salidas**
 
@@ -342,7 +363,7 @@ Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
 ![Sumador LS74283](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUM.png)
 
-**Figura .** Sumador LS74283
+**Figura 24 .** Sumador LS74283
 
 Donde A0 - A3 representan los cuatro primeros bits del número A y B0 - B3 del número B, sin embargo, los números de las entradas son de 8 Bits de magnitud entonces para realizar la suma se necesita realizar una conexión en cascada entre dos sumadores.
 
@@ -350,13 +371,13 @@ Para que se cumpla el proceso se debe conocer las reglas de la suma binaria:
 
 ![Reglas de la suma binaria](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/REGLASUMA.PNG)
 
-**Figura .** Reglas de la suma binaria
+**Figura 25.** Reglas de la suma binaria
 
 El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y salida, entonces para realizar la conexión en cascada: el acarreo de salida del primer sumador es el acarreo de entrada del segundo, por lo tanto, ambos se encuentran conectados y en las entradas del integrado se colocan las cuatro variables restantes de los números A y B, las cuales son: A4 - A7 y B4 - B7 identificando la conexión de los bits más y menos significativos.
 
 ![Conexión en cascada](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CASCADA.png)
 
-**Figura .** Conexión en cascada
+**Figura 26.** Conexión en cascada
 
  * Las salidas de los sumadores representan el resultado de la suma realizada por el circuito integrado y se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
  
@@ -384,25 +405,25 @@ M8=Acarreo de salida del segundo sumador
 
 ![Complemento a 1](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/COMPLEMENTO1.PNG)
 
-**Figura .** Complemento a 1 
+**Figura 27.** Complemento a 1 
 
 Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
 
 ![Negacion de B](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/NEGADO.png)
 
-**Figura .** Negación de B
+**Figura 28.** Negación de B
 
 Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
 
 ![XOR](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA1.png)
 
-**Figura ** XOR en la resta
+**Figura 29.** XOR en la resta
 
 Para un sumador completo de 8 Bits se debe realizar el mismo proceso de complemento a 1 para los 4 bits restantes de ambos números ingresados. De esta forma el restador completo de 8 Bits con signo se establece de la siguiente forma:
 
 ![Restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA.png)
 
-**Figura ** Restador
+**Figura 30.** Restador
 
 Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
 
@@ -430,19 +451,19 @@ El signo del restador completo está dado por la suma de los signos correspondie
 
 ![Signo del restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SIGNO.png)
 
-**Figura :** Signo del restador
+**Figura 31.** Signo del restador
 
 Las salidas del sumador y restador deben mostrar un solo resultado dependiendo de la operación que se elija por medio de un selector: 
 
 ![Selector](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SELECTOR.png)
 
-**Figura :** Selector
+**Figura 32.** Selector
 
 Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos entradas y una salida. Existen integrados como el 74HC153 que realizan el proceso de multiplexar las salidas:
 
 ![Multiplexores 74HC153](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/MULTIPLEXORES.png)
 
-**Figura :** Multiplexores 74HC153
+**Figura 33.** Multiplexores 74HC153
 
 Las entradas de estos MUX estan conformadas por las salidas del circuito sumador y restador, es decir:
 
@@ -460,29 +481,29 @@ Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya co
 
 ![MUX](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Mux.png)
 
-**Figura :** MUX
+**Figura 34.** MUX
 
 * Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 8 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
 
 ![Decodificador 8Bits a BCD](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECO.png)
 
-**Figura :** Decodificador 8Bits a BCD
+**Figura 35.* Decodificador 8Bits a BCD
 
 ![Decodificador 4511](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECODIFICADOR.PNG)
 
-**Figura :** Decodificador 4511
+**Figura 36.** Decodificador 4511
 
 * Para conectar el display se debe tomar en cuenta la estructura que posee, para este circuito se usa un display 7 segmentos cátodo común. Esto quiere decir que el pin común del display debe ir conectado a tierra:
 
 ![Display 7 seg catodo común](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAY.PNG)
 
-**Figura:** Display 7 seg catodo común
+**Figura 37.** Display 7 seg catodo común
 
 * El resultado se todos estos procesos da un circuito sumador/restador de dos números de 8 bits como se muestra a continuación en el software de simulación Proteus:
 
 ![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SimulacionProteus.png)
 
-**Figura:** Simulación Proteus
+**Figura 38.** Simulación Proteus
 
 
 ### 9. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN
@@ -495,7 +516,7 @@ Para realizar la multiplexación de las salidas se utilizo el integrado 74153 su
                                               
 ![74ls153.jpg](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/74ls153.jpg)
 
-**Figura :** Integrado 74153
+**Figura 39.** Integrado 74153
 
 En el circuito para realizar la conexión entre las salidas de los circuitos y el display de 7 segmentos hicimos uso de un Decodificador 4511 BCD de 7 segmentos cuyas características se muestran en la tabla 9.
 
@@ -506,12 +527,9 @@ En el circuito para realizar la conexión entre las salidas de los circuitos y e
 ![4511.gif](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/4511.gif)
 
 
-**Figura :** Integrado 4511
+**Figura 40.** Integrado 4511
 
 El circuito fue implementado en la plataforma Thinkercad como se muestra que ha acontinuación
-
-
-
 
 
 |                 **Herramientas de Software**       |                  **Descripción**                      |
@@ -520,13 +538,16 @@ El circuito fue implementado en la plataforma Thinkercad como se muestra que ha 
 
 ![Thinkercad.png](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/Thinkercad.png)
 
-**Figura :** Laboratorio Virtual Tinkercad
+**Figura 41.** Laboratorio Virtual Tinkercad
 
 ### 10. APORTACIONES
 
 Adicional al Sumador y al restador se realizo la implementacion de las funciones AND y OR para completar una ALU
 
 ![Aporte](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Aporte.png)
+
+**Figura 42.** Funciones And y OR implementadas al circuito 
+
 
 ### 11. CONCLUSIONES
 
