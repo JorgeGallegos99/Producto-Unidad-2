@@ -171,9 +171,10 @@ La tabla de verdad tendrá en total 23 = 8 filas. Para construir esta tabla de v
 
 De esta forma, su tabla de verdad será:
 
-   |**Tabla de Verdad**|     
-   |-------------------|
+  Tabla de Verdad     
+
    | S | M | N | F | 
+   |---------------|
    | 0 | 0 | 0 | 0 |
    | 0 | 0 | 1 | 0 |      
    | 0 | 1 | 0 | 1 |       
