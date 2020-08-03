@@ -485,8 +485,31 @@ El circuito fue implementado en la plataforma Thinkercad como se muestra que ha 
 
 ### 11. CONCLUSIONES
 
+•	Para realizar la suma de dos números de 8 bits se debe realizar una conexión en cascada de dos sumadores para que se refleje el resultado completo.
+
+•	Para el resultado de cualquier operación suma se debe considerar cuales son los números más grandes que se pueden sumar y por lo tanto siempre aumenta un bit a la salida, por lo tanto, si se operan dos números de 8 bits cada uno, el resultado será un binario de 9 bits.
+
+•	Para realizar la resta debemos tomar en cuenta si el número B es mayor al número A, cuando esto suceda obligatoriamente se tiene que mostrar el resultado como un número negativo. 
+
+•	Hay que tomar en cuenta que para los displays de 7 segmentos el número más alto que se puede visualizar es el nueve, por lo tanto, cuando el resultado de la suma implique un número mayor al indicado, no se va a encender el display.
+
+•	La manera idónea para conectar sumadores es atar el acarreo de salida del sumador de menor peso, con el acarreo de entrada del integrado de mayor peso, y de esta manera el residuo de la suma es transferido para tomar en cuenta cualquier valor que venga acumulado. 
+
+•	Tinkercad es un laboratorio virtual que posee varios componentes electrónicos y nos permite visualizar el comportamiento de elementos electrónicos, sin embargo, cuando los circuitos son muy complejos esta herramienta deja de ser eficiente.
 
 ### 12. RECOMENDACIONES
+
+• Se debe tomar en cuenta el valor del acarreo de entrada y salida para cada sumador ya que puede aleterar el resultado.
+
+• Debemos establecer adecuadamente los bits mas significativos y menos significativos que van a ingresar a cada sumador.
+
+• Para las conexion adecuada del display se debe conciderar si será de ánodo o cátodo común para asegurar un correcto funcionamiento del mismo en el circuito diseñado.
+
+• Verificar que no se encuentren conectadas entradas y/o salidas en un mismo punto para que no se generen errores de operación y así evitar que nuestro integrado daños en el integrado.
+
+• Debemos tener claro como se realiza la operacion resta, de esta forma sera mas facil la comprension del funcionamiento del circuito implementado.
+
+• Tinkercad es una potente herramienta de simulacion, preso presenta algunos inconvenientes cuando el circuito es muy complejo.
 
 
 ### 13. CRONOGRAMA
