@@ -149,6 +149,41 @@ Un multiplexor requiere un demultiplexor para completar el proceso, es decir, pa
 
 **Figura 2.** Multiplexor
 
+Se denomina multiplexor 2:1 a aquel que como su propio nombre indica, tiene dos entradas de datos 2n= 2 y una entrada de selección n = 1.
+
+El multiplexor más simple es el que sólo tiene una entrada de selección, S, que permite seleccionar entre dos entradas de datos, según que S = 0 ó S = 1.
+
+Su aspecto es el siguiente:
+
+![multiplexor2a1]()
+
+**Figura. ** Mutilpexor 2 a 1
+
+¿Cómo podemos expresar la función de salida F, usando el Algebra de Boole?.
+
+Existe una manera muy sencilla y que ya conocemos: hacer la tabla de verdad y obtener la función más simplificada.
+
+Construyamos la tabla de verdad; lo primero que nos preguntamos es, ¿cuántas entradas tengo en este circuito?, en total hay tres entradas: dos son de datos:I0 e I1 y una es de selección: S.
+
+La tabla de verdad tendrá en total 23 = 8 filas. Para construir esta tabla de verdad sólo hay que entender el funcionamiento del multiplexor e ir caso por caso rellenando la tabla.
+
+¿qué ocurre si S = 0?. Pues que a la salida del multiplexor obtendremos los datos que entren por la entrada I0. Si aplicamos la definición de multiplexor, se está seleccionando la entrada de datos 0, es decir, la entrada I0. Por tanto, lo que entre por la entrada I1 será ignorado por el multiplexor. Si la entrada seleccionada es la I1, la salida tendrá su mismo valor.
+
+De esta forma, su tabla de verdad será:
+
+   |**Tabla de Verdad**|     
+   |---|---|---|---|
+   | S | M | N | F | 
+   | 0 | 0 | 0 | 0 |
+   | 0 | 0 | 1 | 0 |      
+   | 0 | 1 | 0 | 1 |       
+   | 0 | 1 | 1 | 1 |       
+   | 1 | 0 | 0 | 0 |
+   | 1 | 0 | 1 | 1 |
+   | 1 | 1 | 0 | 0 |
+   | 1 | 1 | 1 | 1 |
+
+
 **Circuitos Aritméticos**
 
 Dentro de la variada gama de circuitos digitales, tenemos los denominados circuitos aritméticos que son dispositivos que pueden realizar operaciones aritméticas (suma, 
