@@ -255,11 +255,21 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 **Figura 15.** Funcionamiento del Circuito.
 
-#### 5.2 Diagrama de Funcionamiento
+![restador.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/restador.JPG)
+
+**Figura 15.1.** Diagrma de bloques del Restador
+
+![sumador.png)](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/sumador.png)
+
+**Figura 15.2.** Diagrma de bloques del Restador
+
+
+#### 5.2 Diagrama de Variables
 
 ![variables.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/variables.JPG)
 
-**Figura 16.** Variables de entrada y de Salida del circuito ALU
+**Figura 16.** Variables de entrada y de Salida del circuito Calculadora Binaria
+
 
 #### 5.3 DiagramasElectrónicos.
 
@@ -582,6 +592,8 @@ Adicional al Sumador y al restador se realizo la implementacion de las funciones
 
 ![Cronograma](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Cronograma.png)
 
+**Figura 43.** Cronograma Monday
+
 ### 14. BIBLIOGRAFÍA
 
 https://teoriadelastelecomunicaciones.files.wordpress.com/2011/11/multiplexacion.pdf
@@ -612,10 +624,12 @@ http://electroucn.blogspot.com/2014/06/Restador.html
 1. Ingresar los números binarios con los que sedesea operar en las entradas del dip switch:
 
 ![VARENTRADAS](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/VARENTRADAS.PNG)
-
+**Figura 44.** Paso 1
 2. Escoger la operación que se desea realizar por medio del selector, siendo 1 suma y 0 resta:
 
 ![DIPSELECTOR](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DIPSELECTOR.PNG)
+
+**Figura 45.** Paso 2
 
 3. Si se escoge 1:
 La operación suma se realiza por medio del circuito sumador en cascada implementado:
