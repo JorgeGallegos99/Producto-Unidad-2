@@ -547,5 +547,42 @@ http://electroucn.blogspot.com/2014/06/Restador.html
 
 **15.1.  MANUAL DE USUARIO**
 
+1. Ingresar los números binarios con los que sedesea operar en las entradas del dip switch:
+
+![VARENTRADAS]()
+
+2. Escoger la operación que se desea realizar por medio del selector, siendo 1 suma y 0 resta:
+
+![DIPSELECTOR]()
+
+3. Si se escoge 1:
+La operación suma se realiza por medio del circuito sumador en cascada implementado:
+
+![SUMA]()
+
+4. La salida de verificación resultado para la suma se da en los siguientes leds, siendo 1 encendido y 0 apagado.
+
+![LEDSUMA]()
+
+5. Si se escoge 0:
+La operación resta se realiza por medio del circuito restador con signo implementado:
+
+![RESTA]()
+
+6. La salida de verificación de resultado para la resta se da en los siguientes leds, siendo 1 encedido y 0 apagado.
+
+![LEDRESTA]()
+
+7. Para poder visualizar ambas salidas en un solo resultado dependiente del selector, se utilizan multiplexores de 2:1 para multiplexar las salidas de la suma y resta del circuito.
+
+![MULTIPLEXORES]()
+
+8. La primera salida de verificación de resultado para la calculadora básica se da en los siguientes leds, siendo 1 encedido y 0 apagado.
+
+![LEDRESULTADO]()
+
+9. La segunda salida de visualización de resultado para la calculadora básica se da en los displays de 7 Segmentos conectados al decodificador BCD y este a su vez conectado al decodificador de binario de 8bits a bcd
+
+![DISPLAYRESULTADO]()
 
 
