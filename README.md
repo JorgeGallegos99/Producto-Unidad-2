@@ -25,7 +25,7 @@ En base los puntos planteados se pretende implementar una calculadora básica de
 
 ● Construir un circuito que permita multiplexar las operaciones de la calculadora binaria de modo que se pueda decidir la operación al utilizarla.
 
-* Utilizar los integrados 74283 para la suma y resta, el decodificador 4511 de bcd a display de 7 segmentos para mostrar el resultado y la compuertas necesarias.
+* Utilizar los integrados 74283 para la suma y resta, el decodificador 7447 de bcd a display de 7 segmentos para mostrar el resultado y la compuertas necesarias.
 
 ●	Simular la Calculadora Binaria, en la herramienta de software Proteus.
 
@@ -169,9 +169,9 @@ La tabla de verdad tendrá en total 23 = 8 filas. Para construir esta tabla de v
 
 ¿qué ocurre si S = 0?. Pues que a la salida del multiplexor obtendremos los datos que entren por la entrada I0. Si aplicamos la definición de multiplexor, se está seleccionando la entrada de datos 0, es decir, la entrada I0. Por tanto, lo que entre por la entrada I1 será ignorado por el multiplexor. Si la entrada seleccionada es la I1, la salida tendrá su mismo valor.
 
-De esta forma, su tabla de verdad será:
+De esta forma, su tabla de verdad será la mostrada en la Tabla.1
 
-  Tabla de Verdad     
+**Tabla 1: Tabla de Verdad Multiplexor 2 a 1**     
 
    | **S** | **M** | **N** | **F** | 
    | -----|---------| ------| ----------- |
@@ -300,38 +300,45 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 **Figura 16.** Funcionamiento del Circuito.
 
-![restador.png](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/restador.png)
-
-**Figura 16.1.** Diagrma de bloques del Restador
-
-![sumador.png)](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/sumador.png)
-
-**Figura 16.2.** Diagrma de bloques del restador.
-
-
 #### 5.2 Diagrama de Variables
 
 ![variables.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/variables.JPG)
 
 **Figura 17.** Variables de entrada y de Salida del circuito Calculadora Binaria
 
+#### 5.3 Diagramas de bloques 
+
+Mediante bloques se representa como va hacer realizado la suma de los 2 números, se puede vizualizar las entradas y las salidas que resultaran de la suma.
+
+![sumador.png)](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/sumador.png)
+
+**Figura 18.** Diagrma de bloques del Sumador.
+
+En el diagrama de la figura 19 se muestra la logica que se usa para el restador utilizando el complemento a1 utilizando sumadores.
+
+![restador.png](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/restador.png)
+
+
+**Figura 19.** Diagrma de bloques del restador.
+
+
 #### 5.3 DiagramasElectrónicos.
 
 ![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/PROTEUS.png)
 
-**Figura 22.** Calculadora de suma y resta en el Proteus
+**Figura 20.** Calculadora de suma y resta en el Proteus
 
 **Implementacion del circuito  en el Constructor virtual**
 
 ![CONTRUCTOR.PNGr](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CONTRUCTOR.PNG)
 
-**Figura 22.** Calculadora de suma y resta en el Constructor Virtual
+**Figura 21.** Calculadora de suma y resta en el Constructor Virtual
 
 ### 6. LISTA DE COMPONENTES
 
-En la Tabla 1 se muestra las herramientas  de software usadas para la simulacion del circuito se utilizó un simulador y la plataforma para la implementación.
+En la Tabla 2 se muestra las herramientas  de software usadas para la simulacion del circuito se utilizó un simulador y la plataforma para la implementación.
 
-**Tabla 1: Herramientas de Software usadas para el diseño de los 3 circuitos.**
+**Tabla 2: Herramientas de Software usadas para el diseño de los 3 circuitos.**
 
    |     **Herramientas de Software**      |                 
    |---------------------------------------|
@@ -339,28 +346,28 @@ En la Tabla 1 se muestra las herramientas  de software usadas para la simulacion
    |           Constructor Virtual         |
   
    
-**Tabla 2: Datos de los integrados usados para el diseño de Circuito Sumador de 8 bits**
+**Tabla 3: Datos de los integrados usados para el diseño de Circuito Sumador de 8 bits**
 
    | **N°**  |   **Integrados** |   **Códigos**    |     
    |-------  |--------------|----------------|
-   |      13 |   Sumador	  |     74283      |
-   |      3  | Decodificador|     4511       |
+   |      8 |   Sumador	  |     74283      |
+   |       | Decodificador|     7447       |
    |      4  | NOT |     7404       |
    |      2  | EXOR |     7486      |
-   |      7  | AND |     7408      |
+   |      6  | AND |     7408      |
    |      6  | OR |     7432     |
    
    
   
-**Tabla 3: Componentes electronicos del Circuito Sumador de 8 bits**
+**Tabla 4: Componentes electronicos del Circuito Sumador de 8 bits**
 
   | **N°** |**Componentes Electronicos**	|    
    |-------|------------------------------|
-   |     47|   Resistencias de 330        |    
+   |     40|   Resistencias de 330        |    
    |      2|   Dip Switch 8 entradas      |     
    |      1|   Fuente de 5 V              |   
    |      16|   Led Green                 | 
-   |      3|   Display 7 segmentos        | 
+   |      2|   Display 7 segmentos        | 
    |      1|   Dip Switch 1 entrada      | 
 
 
@@ -380,7 +387,7 @@ En la Tabla 1 se muestra las herramientas  de software usadas para la simulacion
 
 ![Diagrama de bloques: Sumador 8 Bits](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/ENTRADAS.png)
 
-**Figura 23.** Diagrama de bloques: Sumador 8 Bits
+**Figura 22.** Diagrama de bloques: Sumador 8 Bits
 
 **Entradas**
 
@@ -392,7 +399,7 @@ Donde: B0 es el bit menos significativo y B7 es el más significativo
 
 ![Entradas en DIPSW](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DIPSENTRADAS.PNG)
 
-**Figura 24.** Entradas en DIPSW
+**Figura 23.** Entradas en DIPSW
 
 **Salidas**
 
@@ -404,7 +411,7 @@ Donde: M0 es el bit menos significativo y M8 (acarreo) es el más significativo.
 
 ![Sumador LS74283](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUM.png)
 
-**Figura 25 .** Sumador LS74283
+**Figura 24 .** Sumador LS74283
 
 Donde A0 - A3 representan los cuatro primeros bits del número A y B0 - B3 del número B, sin embargo, los números de las entradas son de 8 Bits de magnitud entonces para realizar la suma se necesita realizar una conexión en cascada entre dos sumadores.
 
@@ -412,13 +419,13 @@ Para que se cumpla el proceso se debe conocer las reglas de la suma binaria:
 
 ![Reglas de la suma binaria](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/REGLASUMA.PNG)
 
-**Figura 26.** Reglas de la suma binaria
+**Figura 25.** Reglas de la suma binaria
 
 El integrado 74LS283 tiene dos pines que representan el acarreo de entrada y salida, entonces para realizar la conexión en cascada: el acarreo de salida del primer sumador es el acarreo de entrada del segundo, por lo tanto, ambos se encuentran conectados y en las entradas del integrado se colocan las cuatro variables restantes de los números A y B, las cuales son: A4 - A7 y B4 - B7 identificando la conexión de los bits más y menos significativos.
 
 ![Conexión en cascada](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CASCADA.png)
 
-**Figura 27.** Conexión en cascada
+**Figura 26.** Conexión en cascada
 
  * Las salidas de los sumadores representan el resultado de la suma realizada por el circuito integrado y se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
  
@@ -446,25 +453,25 @@ M8=Acarreo de salida del segundo sumador
 
 ![Complemento a 1](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/COMPLEMENTO1.PNG)
 
-**Figura 28.** Complemento a 1 
+**Figura 27.** Complemento a 1 
 
 Utilizando este concepto se niega el número B por utilizando inversores y se suma este resultado al número A teniendo como acarreo de entrada un uno lógico: 5V
 
 ![Negacion de B](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/NEGADO.png)
 
-**Figura 29.** Negación de B
+**Figura 28.** Negación de B
 
 Para encontrar el signo de la resta,es decir cuando A sea menor a B se utiliza la compuerta XOR y el acarreo de salida resultante de la suma realizando una conexión en cascada para volver a complementar la salida anterior de la siguiente manera:
 
 ![XOR](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA1.png)
 
-**Figura 30.** XOR en la resta
+**Figura 29.** XOR en la resta
 
 Para un sumador completo de 8 Bits se debe realizar el mismo proceso de complemento a 1 para los 4 bits restantes de ambos números ingresados. De esta forma el restador completo de 8 Bits con signo se establece de la siguiente forma:
 
 ![Restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA.png)
 
-**Figura 31.** Restador
+**Figura 30.** Restador
 
 Las salidas del restador se encuentran conectadas a unos LEDS, de tal forma que cuando el LED se enciende, representa un 1 y cuando se apaga representa un 0.
 
@@ -492,19 +499,19 @@ El signo del restador completo está dado por la suma de los signos correspondie
 
 ![Signo del restador](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SIGNO.png)
 
-**Figura 32.** Signo del restador
+**Figura 31.** Signo del restador
 
 Las salidas del sumador y restador deben mostrar un solo resultado dependiendo de la operación que se elija por medio de un selector: 
 
 ![Selector](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SELECTOR.png)
 
-**Figura 33.** Selector
+**Figura 32.** Selector
 
 Estos selectores se encuentran conectados a Multiplexores de 2:1 es decir, dos entradas y una salida. Existen integrados como el 74HC153 que realizan el proceso de multiplexar las salidas:
 
 ![Multiplexores 74HC153](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/MULTIPLEXORES.png)
 
-**Figura 34.** Multiplexores 74HC153
+**Figura 33.** Multiplexores 74HC153
 
 Las entradas de estos MUX estan conformadas por las salidas del circuito sumador y restador, es decir:
 
@@ -522,23 +529,23 @@ Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya co
 
 ![MUX](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Mux.png)
 
-**Figura 35.** MUX
+**Figura 34.** MUX
 
-* Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 5 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
+* Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 7447 conectado a las salidas de un decodificador de binario 5 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
 
 ![Decodificador 5Bits a BCD](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/dec.png)
 
-**Figura 36.* Decodificador 5Bits a BCD
+**Figura 35.* Decodificador 5Bits a BCD
 
 Para la realización de este decodificador se toma en cuenta el equivalente bcd de un numero binario en una tabla de verdad:
 
 ![Binario a BCD](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/BINBCD.PNG)
 
-**Figura 36.1* Decodificador 5Bits a BCD: Tabla de verdad
+**Figura 35.1* Decodificador 5Bits a BCD: Tabla de verdad
 
 ![Decodificador 4511](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECODIFICADOR.PNG)
 
-**Figura 37.** Decodificador 4511
+**Figura 36.** Decodificador 4511
 
 * Para conectar el display se debe tomar en cuenta la estructura que posee, para este circuito se usa un display 7 segmentos cátodo común. Esto quiere decir que el pin común del display debe ir conectado a tierra:
 
