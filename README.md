@@ -704,6 +704,6 @@ La operación resta se realiza por medio del circuito restador con signo impleme
 
 9. La segunda salida de visualización de resultado para la calculadora básica se da en los displays de 7 Segmentos conectados al decodificador BCD y este a su vez conectado al decodificador de binario de 8bits a bcd
 
-![DISPLAYRESULTADO](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAYRESULTADO.PNG)
+![DISPLAYRESULTADO](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAYRESULTADOS.PNG)
 
 
