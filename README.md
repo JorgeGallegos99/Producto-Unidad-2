@@ -543,52 +543,41 @@ Para la realización de este decodificador se toma en cuenta el equivalente bcd 
 
 **Figura 35.1* Decodificador 5Bits a BCD: Tabla de verdad
 
-![Decodificador 4511](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECODIFICADOR.PNG)
+![DECODIFICADOR.PNG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECODIFICADOR.PNG)
 
-**Figura 36.** Decodificador 4511
+**Figura 36.** Decodificador 7447
 
-* Para conectar el display se debe tomar en cuenta la estructura que posee, para este circuito se usa un display 7 segmentos cátodo común. Esto quiere decir que el pin común del display debe ir conectado a tierra:
+* Para conectar el display se debe tomar en cuenta la estructura que posee, para este circuito se usa un display 7 segmentos ánodo común. Esto quiere decir que el pin común del display debe ir conectado a VCC:
 
-![Display 7 seg catodo común](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAY.PNG)
+![DISPLAYAC.PNG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAYAC.PNG)
 
-**Figura 38.** Display 7 seg catodo común
+**Figura 37.** Display 7 seg Ánodo común
 
 * El resultado se todos estos procesos da un circuito sumador/restador de dos números de 8 bits como se muestra a continuación en el software de simulación Proteus:
 
 ![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/PROTEUS.png)
 
-**Figura 39.** Simulación Proteus
+**Figura 38.** Simulación Proteus
 
 * La implementación del circuito en constructor virtual es de esta manera:
 
 ![Simulación Constructor](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CONTRUCTOR.PNG)
 
-**Figura 39.1** Implementación Constructor Virtual
+**Figura 38.1** Implementación Constructor Virtual
 
 
 ### 9. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN
 
-Para realizar la multiplexación de las salidas se utilizo el integrado 74153 sus caracteristicas se muestras a continuación.
-
-| **Código**|**Características**	|    
-|---------- |--------------------|
-|   74153   | **MULTIPLEXOR de 4 a 1 líneas:** contiene dos multiplexores con sus cuatro entradas de datos y su salida cada uno. Tiene dos entradas de inhibición (STROBE 1G y 2G) activas a nivel bajo(0V) para cada multiplexor y dos entradas de selección (SELECT A y B) comunes a los cuatro multiplexores.|  
-                                              
-![74ls153.jpg](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/74ls153.jpg)
-
-**Figura 40.** Integrado 74153
-
-En el circuito para realizar la conexión entre las salidas de los circuitos y el display de 7 segmentos hicimos uso de un Decodificador 4511 BCD de 7 segmentos cuyas características se muestran en la tabla 9.
+En el circuito para realizar la conexión entre las salidas de los circuitos y el display de 7 segmentos hicimos uso de un Decodificador 7447 BCD de 7 segmentos cuyas características se muestran a continuaciòn
 
 | **Código**|**Características**	|    
 |---------- |--------------------|
 |   7447    | Como sabemos, los display de 7 segmentos pueden ser de ánodo o cátodo común, y para cada uno corresponde el decodificador a usar, para el display de ánodo común usamos un 7447  
 El Circuito Integrado TTL 74LS47 es un decodificador y controlador BCD a siete segmentos con salidas de colección abierta (open-collector outputs). El 74LS47 es un decodificador / Conductor-BCD a siete segmentos cuenta con salidas activas bajas, diseñados para la conducción, LEDs de ánodo común o indicadores incandescentes directamente. El IC para la conducción de buffers lámpara o LEDs de cátodo común. |  
                                               
-![4511.gif](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/4511.gif)
+![7447.png](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/7447.png)
 
-
-**Figura 41.** Integrado 4511
+**Figura 39.** Integrado 7447
 
 El circuito fue implementado en el laboratorio virtual Constructor Virtual  como se muestra que ha acontinuación cuyas caracteriticas y entorno paraimplementar se muestan a continuación.
 
@@ -600,9 +589,20 @@ protoboards, interruptores, pulsadores, leds y visualizadores de siete segmentos
 hasta diez protoboards, cada uno con capacidad para ocho circuitos integrados. Además, el
 programa provee un temporizador (generador de señales periódicas) y una fuente de energía
 eléctrica (fuente DC de 5 V). |
-  ![Thinkercad.png]( https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Constructorvirtual.jpg)
+  
+  ![Constructorvirtual.jpg]( https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Constructorvirtual.jpg)
 
-**Figura 42.** Laboratorio Virtual Tinkercad
+**Figura 40.** Laboratorio Virtual Constructor Virtual
+
+Al Realizar el aporte al trabajo hemos utilizado multiplexores con el integrado 74153 sus caracteristicas se muestras a continuación.
+
+| **Código**|**Características**	|    
+|---------- |--------------------|
+|   74153   | **MULTIPLEXOR de 4 a 1 líneas:** contiene dos multiplexores con sus cuatro entradas de datos y su salida cada uno. Tiene dos entradas de inhibición (STROBE 1G y 2G) activas a nivel bajo(0V) para cada multiplexor y dos entradas de selección (SELECT A y B) comunes a los cuatro multiplexores.|  
+                                              
+![74ls153.jpg](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/74ls153.jpg)
+
+**Figura 41.** Integrado 74153
 
 ### 10. APORTACIONES
 
@@ -610,7 +610,7 @@ Adicional al Sumador y al restador se realizo la implementacion de las funciones
 
 ![Aporte](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Aporte.png)
 
-**Figura 43.** Funciones And y OR implementadas al circuito 
+**Figura 42.** Funciones And y OR implementadas al circuito 
 
 
 ### 11. CONCLUSIONES
@@ -646,7 +646,7 @@ Adicional al Sumador y al restador se realizo la implementacion de las funciones
 
 ![Cronograma](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Cronograma.png)
 
-**Figura 44.** Cronograma Monday
+**Figura 42.** Cronograma Monday
 
 ### 14. BIBLIOGRAFÍA
 
@@ -678,41 +678,53 @@ http://electroucn.blogspot.com/2014/06/Restador.html
 1. Ingresar los números binarios con los que sedesea operar en las entradas del dip switch:
 
 ![VARENTRADAS](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/VARENTRADAS.PNG)
-**Figura 45.** Paso 1
+**Figura 43.** Paso 1
 2. Escoger la operación que se desea realizar por medio del selector, siendo 1 suma y 0 resta:
 
 ![DIPSELECTOR](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DIPSELECTOR.PNG)
 
-**Figura 46.** Paso 2
+**Figura 44.** Paso 2
 
 3. Si se escoge 1:
 La operación suma se realiza por medio del circuito sumador en cascada implementado:
 
 ![SUMA](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SUMA.PNG)
 
+**Figura 45.** Al seleccionar 1 se realiza la SUMA
+
 4. La salida de verificación resultado para la suma se da en los siguientes leds, siendo 1 encendido y 0 apagado.
 
 ![LEDSUMA](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/LEDSUMA.PNG)
+
+**Figura 46.** Resultado de la Suma
 
 5. Si se escoge 0:
 La operación resta se realiza por medio del circuito restador con signo implementado:
 
 ![RESTA](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/RESTA.PNG)
 
+**Figura 47.** Al seleccionar 0 se escoge la Resta
+
 6. La salida de verificación de resultado para la resta se da en los siguientes leds, siendo 1 encedido y 0 apagado.
 
 ![LEDRESTA](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/LEDRESTA.PNG)
+
+**Figura 48.** Resultado de la Resta
 
 7. Para poder visualizar ambas salidas en un solo resultado dependiente del selector, se utilizan multiplexores de 2:1 para multiplexar las salidas de la suma y resta del circuito.
 
 ![MULTIPLEXORES](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/MUX2.1.PNG)
 
+**Figura 49.** Multiplexores
+
 8. La primera salida de verificación de resultado para la calculadora básica se da en los siguientes leds, siendo 1 encedido y 0 apagado.
 
 ![LEDRESULTADO](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/LEDRESULTADO.PNG)
+
+**Figura 50.**  1 encedido 0 apagado
 
 9. La segunda salida de visualización de resultado para la calculadora básica se da en los displays de 7 Segmentos (2) conectados al decodificador BCD y este a su vez conectado al decodificador de binario de 5 bits a bcd 
 
 ![DISPLAYRESULTADO](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAYRESULTADOS.PNG)
 
-
+**Figura 51.** Resultado de los displays.
