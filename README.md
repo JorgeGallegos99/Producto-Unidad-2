@@ -538,11 +538,17 @@ Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya co
 
 **Figura 35.** MUX
 
-* Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 8 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
+* Para visualizar este resultado en un display de 7 segmentos se utiliza el decodificador 4511 conectado a las salidas de un decodificador de binario 5 Bits a BCD y a su vez a las entradas del display junto con resistencias para evitar que el dispositivo sufra daños.
 
-![Decodificador 8Bits a BCD](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECO.png)
+![Decodificador 5Bits a BCD](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/dec.png)
 
-**Figura 36.* Decodificador 8Bits a BCD
+**Figura 36.* Decodificador 5Bits a BCD
+
+Para la realización de este decodificador se toma en cuenta el equivalente bcd de un numero binario en una tabla de verdad:
+
+![Binario a BCD](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/BINBCD.PNG)
+
+**Figura 36.1* Decodificador 5Bits a BCD: Tabla de verdad
 
 ![Decodificador 4511](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DECODIFICADOR.PNG)
 
@@ -556,9 +562,15 @@ Sin embargo es posible diseñar estos mux por medio de compuertas lógicas ya co
 
 * El resultado se todos estos procesos da un circuito sumador/restador de dos números de 8 bits como se muestra a continuación en el software de simulación Proteus:
 
-![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/SimulacionProteus.png)
+![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/PROTEUS.png)
 
 **Figura 39.** Simulación Proteus
+
+* La implementación del circuito en constructor virtual es de esta manera:
+
+![Simulación Constructor](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CONTRUCTOR.PNG)
+
+**Figura 39.1** Implementación Constructor Virtual
 
 
 ### 9. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN
@@ -702,7 +714,7 @@ La operación resta se realiza por medio del circuito restador con signo impleme
 
 ![LEDRESULTADO](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/LEDRESULTADO.PNG)
 
-9. La segunda salida de visualización de resultado para la calculadora básica se da en los displays de 7 Segmentos conectados al decodificador BCD y este a su vez conectado al decodificador de binario de 8bits a bcd
+9. La segunda salida de visualización de resultado para la calculadora básica se da en los displays de 7 Segmentos (2) conectados al decodificador BCD y este a su vez conectado al decodificador de binario de 5 bits a bcd 
 
 ![DISPLAYRESULTADO](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/DISPLAYRESULTADOS.PNG)
 
