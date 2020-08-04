@@ -157,7 +157,7 @@ Su aspecto es el siguiente:
 
 ![multiplexor2a1]()
 
-**Figura. ** Mutilpexor 2 a 1
+**Figura.** Mutilpexor 2 a 1
 
 ¿Cómo podemos expresar la función de salida F, usando el Algebra de Boole?.
 
@@ -183,7 +183,22 @@ De esta forma, su tabla de verdad será:
    | 1 | 0 | 1 | 1    |
    | 1 | 1 | 0 | 0      |
    | 1 | 1 | 1 | 1       |
+   
+Apliquemos el método de Karnaugh y agrupamos los "1" adyacentes, para obtener la expresión más simplificada de F.
 
+El diagrama que se obtiene es el siguiente:
+
+![mapaKMultiplexor]()
+
+**Figura.** Mapa de Karnaugh
+
+Obteniendo la siguiente expresión:
+
+F = S'M +  SN
+
+Si nos fijamos, es una expresión de minitérminos, es decir suma de términos que están multiplicados, por eso hemos agrupados los "1".
+
+Podemos observar, que si S = 0, F = M. Por lo que, obtendremos a la salida el valor de la entrada M.
 
 **Circuitos Aritméticos**
 
