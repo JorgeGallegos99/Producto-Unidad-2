@@ -318,28 +318,14 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 #### 5.3 DiagramasElectrónicos.
 
-![circuitoProteus.png](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/circuitoProteus.png)
-
-**Figura 18.**  Circuito en Proteus.
+![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/PROTEUS.png)
 
 
 **Implementacion del circuito  en el Constructor virtual**
 
-![IMPLEM1.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM1.JPG)
+![Simulación Constructor](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CONTRUCTOR.PNG)
 
-**Figura 19.** Parte 1
-
-![IMPLEM2.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM2.JPG)
-
-**Figura 20.** Parte 2
-
-![IMPLEM3.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM3.JPG)
-
-**Figura 21.** Parte 3
-
-![IMPLEM4.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/IMPLEM4.JPG)
-
-**Figura 22.** Parte 4
+**Figura 22.** Calculadora de suma y resta en el Constructor Virtual
 
 ### 6. LISTA DE COMPONENTES
 
@@ -589,7 +575,8 @@ En el circuito para realizar la conexión entre las salidas de los circuitos y e
 
 | **Código**|**Características**	|    
 |---------- |--------------------|
-|   4511    | El CD4511 es un decodificador bcd de 4 bits para display cátodo común, que utiliza tecnología cmos.                                                                             Recibe en los Pines de entrada a ABCD los datos en código binario y los decodifica a código decimal,                                                                             siendo posible su exhibición en los display de 7 segmentos.|  
+|   7447    | Como sabemos, los display de 7 segmentos pueden ser de ánodo o cátodo común, y para cada uno corresponde el decodificador a usar, para el display de ánodo común usamos un 7447  
+El Circuito Integrado TTL 74LS47 es un decodificador y controlador BCD a siete segmentos con salidas de colección abierta (open-collector outputs). El 74LS47 es un decodificador / Conductor-BCD a siete segmentos cuenta con salidas activas bajas, diseñados para la conducción, LEDs de ánodo común o indicadores incandescentes directamente. El IC para la conducción de buffers lámpara o LEDs de cátodo común. |  
                                               
 ![4511.gif](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/4511.gif)
 
@@ -602,8 +589,13 @@ El circuito fue implementado en la plataforma Thinkercad como se muestra que ha 
 |                 **Herramientas de Software**       |                  **Descripción**                      |
 |----------------------------------------------------|-------------------------------------------------------|
 |              Tinkercad                             | Tinkercad es una sencilla aplicación en línea de diseño e impresión en 3D para todos, creado por la empresa Autodesk. Sus ventajas son claras: es sencillo de usar, su aspecto es atractivo y con unas pocas horas de entrenamiento podemos                                                           adquirir mucha destreza en su uso. Como desventaja podríamos señalar que es necesario tener una cuenta de correo para darse de alta como usuario y que sólo                                                         posee una versión online, por lo que hace falta conexión a internet.|
+ |              Constructor Virtual                  |El programa cuenta con elementos que acompañan frecuentemente a los circuitos digitales:
+protoboards, interruptores, pulsadores, leds y visualizadores de siete segmentos. Es posible colocar
+hasta diez protoboards, cada uno con capacidad para ocho circuitos integrados. Además, el
+programa provee un temporizador (generador de señales periódicas) y una fuente de energía
+eléctrica (fuente DC de 5 V). |
 
-![Thinkercad.png](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/Thinkercad.png)
+![Thinkercad.png](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/Thinkercad.png)  ![Thinkercad.png]( https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Constructorvirtual.jpg)
 
 **Figura 42.** Laboratorio Virtual Tinkercad
 
