@@ -300,13 +300,13 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 **Figura 16.** Funcionamiento del Circuito.
 
-![restador.JPG](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/restador.JPG)
+![restador.png](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/restador.png)
 
 **Figura 16.1.** Diagrma de bloques del Restador
 
 ![sumador.png)](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/sumador.png)
 
-**Figura 16.2.** Diagrma de bloques del Restador
+**Figura 16.2.** Diagrma de bloques del restador.
 
 
 #### 5.2 Diagrama de Variables
@@ -315,15 +315,15 @@ Un medio restador es un circuito combinacional que sustrae dos bits y produce su
 
 **Figura 17.** Variables de entrada y de Salida del circuito Calculadora Binaria
 
-
 #### 5.3 DiagramasElectrónicos.
 
 ![Simulación Proteus](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/PROTEUS.png)
 
+**Figura 22.** Calculadora de suma y resta en el Proteus
 
 **Implementacion del circuito  en el Constructor virtual**
 
-![Simulación Constructor](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CONTRUCTOR.PNG)
+![CONTRUCTOR.PNGr](https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/CONTRUCTOR.PNG)
 
 **Figura 22.** Calculadora de suma y resta en el Constructor Virtual
 
@@ -583,19 +583,17 @@ El Circuito Integrado TTL 74LS47 es un decodificador y controlador BCD a siete s
 
 **Figura 41.** Integrado 4511
 
-El circuito fue implementado en la plataforma Thinkercad como se muestra que ha acontinuación
+El circuito fue implementado en el laboratorio virtual Constructor Virtual  como se muestra que ha acontinuación cuyas caracteriticas y entorno paraimplementar se muestan a continuación.
 
 
 |                 **Herramientas de Software**       |                  **Descripción**                      |
 |----------------------------------------------------|-------------------------------------------------------|
-|              Tinkercad                             | Tinkercad es una sencilla aplicación en línea de diseño e impresión en 3D para todos, creado por la empresa Autodesk. Sus ventajas son claras: es sencillo de usar, su aspecto es atractivo y con unas pocas horas de entrenamiento podemos                                                           adquirir mucha destreza en su uso. Como desventaja podríamos señalar que es necesario tener una cuenta de correo para darse de alta como usuario y que sólo                                                         posee una versión online, por lo que hace falta conexión a internet.|
- |              Constructor Virtual                  |El programa cuenta con elementos que acompañan frecuentemente a los circuitos digitales:
+|              Constructor Virtual                  |El programa cuenta con elementos que acompañan frecuentemente a los circuitos digitales:
 protoboards, interruptores, pulsadores, leds y visualizadores de siete segmentos. Es posible colocar
 hasta diez protoboards, cada uno con capacidad para ocho circuitos integrados. Además, el
 programa provee un temporizador (generador de señales periódicas) y una fuente de energía
 eléctrica (fuente DC de 5 V). |
-
-![Thinkercad.png](https://github.com/JorgeGallegos99/Trabajo-de-investigacion-2/blob/master/Img/Thinkercad.png)  ![Thinkercad.png]( https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Constructorvirtual.jpg)
+  ![Thinkercad.png]( https://github.com/JorgeGallegos99/Producto-Unidad-2/blob/master/Img/Constructorvirtual.jpg)
 
 **Figura 42.** Laboratorio Virtual Tinkercad
 
